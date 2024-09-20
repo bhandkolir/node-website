@@ -15,6 +15,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 // routes
 app.use('/', index);
 
+//app.get('/', (req, res) => {
+  // Pass request headers to the EJS template
+//  res.render('headers', { headers: req.headers });
+//});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
