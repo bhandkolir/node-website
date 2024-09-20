@@ -4,6 +4,11 @@ var logger = require('morgan');
 var index = require('./routes/index');
 var app = express();
 
+// Node.js version 15.1.0 and above
+const http = require('http');
+const req = new http.IncomingMessage();
+console.log(req.headers); // Output: { 'Content-Type': 'application/json' }
+console.log(Object.keys(req)); // Output: []
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
