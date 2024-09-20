@@ -7,6 +7,9 @@ var app = express();
 // Node.js version 15.1.0 and above
 const http = require('http');
 const req = new http.IncomingMessage();
+return res.render('headers', { data: JSON.stringify(req) })
+
+
 console.log(req.headers); // Output: { 'Content-Type': 'application/json' }
 console.log(Object.keys(req)); // Output: []
 
