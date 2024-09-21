@@ -13,10 +13,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 // routes
-// app.use('/', index);
+app.use('/', index);
 
-// Route to render the index.ejs template
-app.get('/', (req, res) => {
+// Route to render the headers.ejs template
+app.get('/getheaders', (req, res) => {
   // Get request headers
   const headers = req.headers;
 
