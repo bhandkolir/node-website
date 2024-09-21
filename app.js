@@ -19,7 +19,6 @@ app.use('/', index);
 app.get('/getheaders', (req, res) => {
   // Get request headers
   const headers = req.headers;
-
   // Render the headers.ejs template with headers
   res.render('headers', { headers });
 });

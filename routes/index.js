@@ -14,8 +14,4 @@ router.get('/contact', function(req, res, next) {
   res.render('contact', {page:'OAuth', menuId:'contact'});
 });
 
-router.get('/getheaders', function(req, res, next) {
-  res.render('headers', {page:'Headers', menuId:'getheaders'});
-});
-
 module.exports = router;
