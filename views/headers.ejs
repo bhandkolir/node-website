@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <% include partials/head %> 
+  <title>Request Headers</title>
 </head>
 <body>
-<% include partials/menu %>
 <div class="container-fluid bg-3 text-center">    
   <h3><%= page %></h3><br>
   <div class="row">
     <div class="col-sm-4"> 
       <p>This page will display the Request Headers</p>
-
-      <ul>
-        <% for (let header in headers) { %>
-            <li><strong><%= header %>:</strong> <%= headers[header] %></li>
-        <% } %>
-      </ul>
-
+        <ul>
+          <% for (let header in headers) { %>
+              <li><strong><%= header %>:</strong> <%= headers[header] %></li>
+          <% } %>
+        </ul>
     </div>
   </div>
 </div>
-
 </body>
 <% include partials/script %>
 </html>
